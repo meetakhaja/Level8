@@ -61,7 +61,6 @@ function cursorEffect() {
 }
 cursorEffect();
 
-
 function menu() {
   var menu = document.querySelector("nav h4");
   var full = document.querySelector("#hamburger");
@@ -80,3 +79,42 @@ function menu() {
   });
 }
 menu();
+
+function page2Animation() {
+  gsap.from("#page2-bottom h2", {
+    y: 120,
+    stagger: 0.25,
+    duration: 1,
+    ScrollTrigger: {
+      trigger: "#page2",
+      scroller: "#main",
+      start: "top 40%",
+      end: "top 37%",
+      scrub: 2,
+    },
+  });
+}
+page2Animation();
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 20,
+  slidesPerView: 4,
+  centeredSlides: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
