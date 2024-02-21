@@ -35,6 +35,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
+
 function cursorEffect() {
   var page1part1 = document.querySelector("#page1-part1");
   var cursor = document.querySelector("#cursor");
@@ -59,3 +60,23 @@ function cursorEffect() {
   });
 }
 cursorEffect();
+
+
+function menu() {
+  var menu = document.querySelector("nav h4");
+  var full = document.querySelector("#hamburger");
+  var navimg = document.querySelector("nav img");
+  var flag = 0;
+  menu.addEventListener("click", function () {
+    if (flag == 0) {
+      full.style.top = 0;
+      navimg.style.opacity = 0;
+      flag = 1;
+    } else {
+      full.style.top = "-100%";
+      navimg.style.opacity = 1;
+      flag = 0;
+    }
+  });
+}
+menu();
