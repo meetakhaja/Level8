@@ -159,6 +159,20 @@ body {
   font-family: meet1;
   font-size: 1.5rem;
   font-weight: 400;
+  position: relative;
+}
+#p3-top h2::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  transition: all ease 1s;
+}
+#p3-top h2:hover::after{
+  width: 100%;
 }
 #p3-bottom {
   margin-top: 2vh;
@@ -199,8 +213,8 @@ body {
   align-items: center;
   justify-content: center; */
 }
-#page4-top{
-  padding: 2vw 0vw
+#page4-top {
+  padding: 2vw 0vw;
 }
 #page-4 h2 {
   font-family: meet1;
@@ -224,9 +238,21 @@ body {
   min-height: 50vh;
   width: 100%;
 }
-#page-4 video {
+#video {
   height: 100vh;
   width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+#video video {
+  height: 100%;
+}
+#video svg {
+  position: absolute;
+  height: 60%;
+  color: black;
 }
 #page-5 {
   min-height: 100vh;
@@ -264,6 +290,90 @@ body {
   min-height: 100vh;
   width: 100%;
   background-color: black;
+  color: white;
+  padding: 3vw 3vw;
+  padding-bottom: 0%;
+}
+#p6-1 {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+#p6-11 {
+  width: 50vw;
+}
+#p6-12 {
+  width: 5vw;
+}
+#p6-13 {
+  width: 5vw;
+}
+#p6-11 h2 {
+  font-size: 1rem;
+  font-family: meet1;
+  font-weight: 100;
+}
+#p6-11 button {
+  font-size: 1rem;
+  font-family: meet1;
+  font-weight: 100;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 16px 12px;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+#p6-11 button:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+#p6-12 h4 {
+  font-size: 1rem;
+  font-family: meet1;
+  font-weight: 100;
+}
+#p6-13 h4 {
+  font-size: 1rem;
+  font-family: meet1;
+  font-weight: 100;
+}
+#p6-2 {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+#p6-21 {
+  width: 50vw;
+}
+#p6-22 {
+  width: 5vw;
+}
+#p6-23 {
+  width: 5vw;
+}
+#p6-2 h3 {
+  font-size: 1rem;
+  font-family: meet1;
+  font-weight: 100;
+}
+
+#p6-3 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#p6-3 h1 {
+  font-size: 22rem;
+  font-family: meet2;
+  font-weight: 100;
 }
 .swiper {
   width: 100%;
