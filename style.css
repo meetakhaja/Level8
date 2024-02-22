@@ -76,10 +76,11 @@ body {
   font-weight: 400;
   font-size: 1.125 rem;
 }
-#page-1heading h1 {
+#page-1heading span {
   font-family: meet2;
   font-size: 27.5vw;
   font-weight: 100;
+  display: inline-block;
 }
 #page-2 {
   min-height: 100vh;
@@ -91,7 +92,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1vw 0vw;
+  padding: 2vw 0vw;
   border-bottom: 1px solid black;
 }
 #page2-bottom {
@@ -198,6 +199,9 @@ body {
   align-items: center;
   justify-content: center; */
 }
+#page4-top{
+  padding: 2vw 0vw
+}
 #page-4 h2 {
   font-family: meet1;
   font-size: 1.5rem;
@@ -225,7 +229,7 @@ body {
   width: 100%;
 }
 #page-5 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 3vw 3vw;
 }
@@ -236,6 +240,30 @@ body {
   border-bottom: 1px solid black;
   width: 96%;
   margin-left: 2%;
+}
+#p5-bottom {
+  height: 70vh;
+  width: 100%;
+  text-align: center;
+  /* transform: translate(-50%,-50%); */
+  position: relative;
+  padding-top: 30vh;
+  padding-bottom: 0vh;
+}
+#p5-bottom h4 {
+  font-family: meet1;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+#p5-bottom h2 {
+  font-family: meet1;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+#page-6 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
 }
 .swiper {
   width: 100%;
@@ -254,11 +282,11 @@ body {
   /* height: 100%; */
   object-fit: cover;
 }
-#newswiper{
+#newswiper {
   height: 80vh;
   width: 100%;
   position: relative;
-  margin-top: -17%;
+  margin-top: -15%;
 }
 #hamburger {
   /* min-height: 100vh; */
@@ -274,4 +302,22 @@ body {
   width: 100vw;
   background-color: #ff5f38;
   color: black;
+}
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#loader h3 {
+  font-family: meet1;
+  font-size: 2rem;
+  font-weight: 500;
 }
